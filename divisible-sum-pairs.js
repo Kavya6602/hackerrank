@@ -1,5 +1,14 @@
 let k = 5;
-let n = arr.length;
-let arr = [25,5,3,4,50,6];
+let ar = [1, 2, 3, 4, 5, 6];
+let n = ar.length;
+let count = 0
 
-if()
+for (let i = 0; i < n - 1; i++) {
+    for (let j = i + 1; j < n; j++) {
+        if ((ar[i] + ar[j]) % k === 0) {
+            count++;
+        }
+    }
+}
+
+return count;
